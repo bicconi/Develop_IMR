@@ -28,14 +28,14 @@ class CalculatorTest {
     }
 
     @Test
-    void calLogin() {
+    void calLogic() {
         cal = new Calculator();
-        assertEquals("0", cal.calLogic(1));
+        assertEquals("0", cal.calLogic(0));
         cal.setTarget(1);
-        assertEquals("1", cal.calLogic(1));
+        assertEquals("1", cal.calLogic(0));
         cal.setTarget(2);
-        assertEquals("3", cal.calLogic(1));
-        assertEquals("4", cal.calLogic(1));
+        assertEquals("3", cal.calLogic(0));
+        assertEquals("5", cal.calLogic(0));
     }
 
     @Test

@@ -52,11 +52,10 @@ public class Calculator {
     public String calLogic(int option) {
         if(isInput) {
             isInput = false;
-            result = target;
+            calculate();
             target = new StringBuilder("0");
         }
         else {
-            System.out.println(target + " " + result);
             calculate();
         }
         this.option = option;
