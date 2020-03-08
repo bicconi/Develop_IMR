@@ -52,12 +52,8 @@ public class Calculator {
     public String calLogic(int option) {
         if(isInput) {
             isInput = false;
-            calculate();
-            target = new StringBuilder("0");
         }
-        else {
-            calculate();
-        }
+        calculate();
         this.option = option;
         return this.result.toString();
     }
